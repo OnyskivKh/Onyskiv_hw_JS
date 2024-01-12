@@ -43,7 +43,7 @@
     "Node.js.variables.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/js-hw-1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/khrystyna/Java script",
     "node.js.detected.package.eslint": "true",
@@ -103,7 +103,7 @@
       <updated>1704735380779</updated>
       <workItem from="1704735381900" duration="3565000" />
       <workItem from="1704987132046" duration="1262000" />
-      <workItem from="1704994978787" duration="14661000" />
+      <workItem from="1704994978787" duration="14970000" />
     </task>
     <servers />
   </component>
