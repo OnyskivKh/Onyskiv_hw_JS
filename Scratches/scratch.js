@@ -1,21 +1,8 @@
-let number = 50;
+let meter = 32;
 
-switch(number) {
-    case 49:
-        console.log('Value = 49');
-        break;
-    case 55:
-        console.log('Value = 55');
-        break;
-    case 51:
-        console.log('Value = 51');
-        break;
-    default:
-        console.log('Default value');
-        break;
+    if (meter >= 1000) {
+        console.log(kilometers = meter / 1000);
+    } else {
+        console.log(kilometers = meter * 0.001);
+
 }
-
-
-
-
-
