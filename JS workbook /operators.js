@@ -68,6 +68,15 @@ const fries = true;
 if(hamburger&&fries){
     console.log('я ситий');
 }
+// вкладений if
+if(hamburger){
+    if(fries){
+        console.log('я ситий');
+    }
+}else{
+    console.log('я  голодний');
+}
+
 
 // false - 0, "", null, undefined, NaN
 

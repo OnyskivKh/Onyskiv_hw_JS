@@ -1,9 +1,11 @@
 
-let meter = 32;
+const hamburger = 1; // 0 = false, 1 = true
+const fries = true;
 
-if (meter >= 1000) {
-    console.log(meter + ' метрів це ' + (kilometers = meter / 1000) + ' кілометр');
-} else {
-    console.log(meter + ' метра це ' + (kilometers = meter * 0.001) + ' кілометр');
-
+if(hamburger){
+    if(fries){
+        console.log('я ситий');
+    }
+}else{
+    console.log('я  голодний');
 }
