@@ -1,11 +1,14 @@
+let a = [1,2,3,4,5]
+let b = [];
 
-const hamburger = 1; // 0 = false, 1 = true
-const fries = true;
+for(let i = 0; i < a.length; i++){
 
-if(hamburger){
-    if(fries){
-        console.log('я ситий');
+    if(!(a[i]%2)){
+        b.push(a[i]);
     }
-}else{
-    console.log('я  голодний');
+
+    for(let j = 0; j < b.length; j++) {
+        console.log(b[j]);
+    }
+
 }
