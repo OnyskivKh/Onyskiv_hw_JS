@@ -193,7 +193,7 @@ const myRequest = (username, password, date = Date()) => {
 }
 console.log(myRequest( "mail@gmail.com", "qwerty"))
 
-///
+///default parameters
 
 console.log(Date())
 
@@ -221,3 +221,57 @@ function generateLeadName(name){
 }
 
 console.log(generateLeadName('LeadName'));
+
+// callback function
+
+function sth() {
+    console.log('hello')
+}
+
+function sth2() {
+    console.log('world')
+}
+
+setTimeout(sth, 5000);
+setTimeout(sth2, 2000);
+
+console.log('123');
+
+
+//before callback
+function first() {
+    setTimeout(function () {
+        console.log('first')
+    }, 5000)
+}
+
+function second() {
+    console.log('second')
+}
+
+first();
+second()
+
+//with callback
+
+function first(callback) {
+    setTimeout(function () {
+        console.log('first')
+        callback();
+    }, 5000)
+}
+
+function second() {
+    console.log('second')
+}
+
+first(second);
+//
+
+function it(testName, testSteps){
+    console.log(`test name: ${testName}`);
+    testSteps();
+}
+it('test description', ()=>{
+    console.log('test steps')
+})

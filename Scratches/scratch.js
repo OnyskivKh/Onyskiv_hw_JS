@@ -1,11 +1,16 @@
+const timeoutPromise = () => {
+    return new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        console.log('2 sec wait');
+        resolve();
+    }, 2000)
 
-const arr = [[1, 2], [3, 4], [5, 6, 7]];
-
-let product = 1;
-
-for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-        product *= arr[i][j];
-    }
+    })
 }
-console.log(product);
+const asyncFn = async() => {
+    console.log('Send request')
+    await timeoutPromise();
+    console.log('data received')
+}
+
+asyncFn();
