@@ -18,12 +18,16 @@ class Parent {
     }
 
     tellJobTitle() {
-        this.jobTitle = 'QA'
-        console.log(`My job position is ${this.jobTitle}`)
+        if (this instanceof Child){
+            console.log('I don\'t have job')
+        }else {
+            this.jobTitle = 'QA'
+            console.log(`My job position is ${this.jobTitle}`)
+        }
     }
 }
 
-class Child extends Parent{  // цей клас наслідує властивості батьківського класу
+class Child extends Parent{  // цей клас наслідує властивості батьківського класу by extends Parent
 
     greeting() {
         console.log('Hi! It\'s Child greeting')
@@ -41,3 +45,13 @@ Krystyna.greeting();
 Krystyna.tellName();
 Krystyna.tellAge();
 Krystyna.tellJobTitle();
+console.log(Krystyna.jobTitle)
+
+console.log('\n')
+
+myChild.greeting();
+myChild.tellName();
+myChild.tellAge();
+myChild.tellJobTitle();
+myChild.goToSchool();
+console.log(myChild.jobTitle)
